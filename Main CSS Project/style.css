@@ -62,3 +62,65 @@ a {
     background-color: rgb(240, 255, 253);
     border-radius: 24px;
 }
+
+/* login page CSS*/
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-card {
+  background: #a4e0d5;
+  padding: 2rem;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 360px;
+  position: relative;
+}
+
+.modal-card h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #f1f5f9;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.5rem;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login input {
+  padding: 1rem;
+  border-radius: 24px;
+  border: 1px solid #334155;
+  background: #edeaf1;
+  color: black;
+  outline: none;
+}
+
+.submit-button {
+  padding: 0.75rem;
+  border-radius: 24px;
+  border: 0px;
+  background-color: rgb(104, 203, 164);
+  color: #ffffff;
+  font-weight: bold;
+}
