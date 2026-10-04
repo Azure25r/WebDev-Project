@@ -29,13 +29,63 @@
         align-items: center;
       }
       .dash {
-        height: 500px;
-        width: 500px;
+        min-height: 200px;
+        min-width: 800px;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(12px);
         border-radius: 24px;
         font-family: "Oswald", sans-serif;
         text-align: center;
+      }
+
+      .input-card{
+        min-height:75px ;
+        min-width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+      }
+
+      .dash button{
+        border: 0px;
+        border-radius: 24px;
+        padding:1rem;
+      }
+      #search{
+        padding: 1rem;
+        min-width: 200px;
+        min-height: 30px;
+        border-radius:24px;
+        border: 1px solid #334155;
+        background: #edeaf1;
+        color: black;
+        outline: none;
+      }
+      
+      .stat-cards{
+        padding: 10px;
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        gap: 5px;
+      }
+      
+      .stats{
+        padding: 10px;
+        margin: 10px;
+        min-width: 150px;
+        min-height: 100px;
+        background-color: rgba(158, 232, 232, 0.394);
+        border-radius: 24px;
+        font-size: large;
+      }
+      h3{
+        color: darkblue;
       }
     </style>
   </head>
@@ -66,10 +116,19 @@
     <div class="outerdash">
       <div class="dash">
         <div><h1>Codeforces Stats Tracker</h1></div>
-        <div><input type="search" id="search" /></div>
-        <div></div>
+        <div class="input-card">
+          <input type="search" id="search" placeholder="Input Codeforces Handle" />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="stat-cards">
+          <div class="stats"><h3>CURRENT RATING</h3><p id="rating">--</p></div>
+          <div class="stats"><h3>RANK</h3><p id="rank">--</p></div>
+          <div class="stats"><h3>MAX RATING</h3><p id="max-rating">--</p></div>
+          <div class="stats"><h3>CONTRIBUTION</h3><p id="contribution">--</p></div>
+        </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
