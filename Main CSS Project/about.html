@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,45 +12,66 @@
       href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Indie+Flower&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne+Tactile&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Indie+Flower&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Syne+Tactile&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      .main{
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-start;
-      }
-      .inner-main1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-      .inner-main{
-        background-color:whitesmoke;
-        padding: 10px;
-        border: 2px solid;
-        min-width:80vw;
-        border-color: rgb(61, 36, 4);
-        border-radius: 24px;
-      }
       body {
-        background-color: #8461a5;
+        background-color: #ff2dd1;
       }
       .main {
-        background-color: #eee7ff;
+        background-color: #fdffb8;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: "Smooch Sans", sans-serif;
       }
+      .inner-main1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        gap: 30px;
+        margin: 50px;
+        margin-top: 10px;
+      }
+      .inner-main {
+        background-color: #4dffbe;
+        padding: 10px;
+        border: 2px solid;
+        width: 75vw;
+        border-color: rgb(61, 36, 4);
+        border-radius: 24px;
+        font-size:larger;
+        text-align: center;
+      }
+     
+      span{
+        font-style: normal;
+      }
+      ul {
+  list-style-position: inside;
+  text-align: center;
+  padding: 0;
+}
     </style>
   </head>
   <body>
     <nav class="nav-bar-container">
       <div class="nav-bar-1">
         <a href="./index.html">HOME</a>
-        <a href="./project.html">PROJECT</a>
+        <a href="./skills.html">SKILLS</a>
         <a href="./about.html">ABOUT</a>
+        <a href="./project.html">PROJECT</a>
       </div>
       <div class="nav-bar-2">
         <a href="#" id="openLogin">log in</a>
       </div>
     </nav>
-    
+
     <div id="loginModal" class="modal-overlay">
       <div class="modal-card">
         <span id="closeModal" class="close-btn">&times;</span>
@@ -62,29 +83,30 @@
         </form>
       </div>
     </div>
-<div>
-<div class="main">
-<div class="inner-main1">
-<div class="inner-main">
-<h1>Hi, I'm Basha 👋</h1>
-<p>I'm passionate about competitive programming, web development, and exploring how systems work under the hood.</p>
-</div>
-<div class="inner-main">
-<h2>What I Work With</h2>
-<p>My coding journey revolves around problem-solving and building clean digital experiences.<br>
-Languages: C++, Java, JavaScript, HTML, CSS<br>
-Tools: Linux Terminal, Git, VS Code, JetBrains Suite</p>
-</div>
-<div class="inner-main">
-<h2>Track My Progress</h2>
-<p>You can track my competitive programming progress and open-source code here:<br>
-Codeforces: AzureR<br>
-LeetCode: Azure_R<br>
-GitHub: Azure25r</p>
-</div>
-</div>
-</div>
-
+    <div class="main">
+      <div style="font-size: larger;"><h1 style="color: #4300FF;">ABOUT ME</h1></div>
+      <div class="inner-main1">
+        <div class="inner-main">
+          <h2 h1 style="color: #0065F8;" >Hi, I'm <span>SHAIK MAHABOOB BASHA</span></h2>
+          <p>I'm a CS undergrad based in Bengaluru, balancing a hands-on tech education at Scaler School of Technology alongside a B.Sc. in Computer Science from BITS Pilani.
+            I'm passionate about competitive programming, web development, and
+            exploring how systems work under the hood.
+          </p>
+        </div>
+        <div class="inner-main">
+          <h2 style="color: #0065F8;">Track My Progress</h2>
+          <p>
+            You can track my competitive programming progress and open-source
+            code here:<br />
+            <ul>
+            <li>Codeforces: <a href="https://codeforces.com/profile/AzureR" target="_blank" style="text-decoration:underline;">AzureR<span style="font-size: small;">↗</span></a></li>
+            <li>LeetCode: <a href="https://leetcode.com/u/Azure_R/" target="_blank" style="text-decoration:underline;">Azure_R<span style="font-size: small;">↗</span></a></li>
+            <li>GitHub: <a href="https://github.com/Azure25r" target="_blank" style="text-decoration:underline;">Azure25r<span style="font-size: small;">↗</span></a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

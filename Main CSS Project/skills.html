@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skills</title>
+<link rel="stylesheet" href="./style.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Indie+Flower&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne+Tactile&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Indie+Flower&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Syne+Tactile&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+body {
+background-color: #39B1D1;
+}
+.main {
+background-color: #D6FB61;
+}
+.outerBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:70vh;
+}
+.info{
+    font-family: "Smooch Sans", sans-serif;
+    padding:10px;
+    min-height: auto;
+    width: 50%;
+    text-align: center;
+    font-size:x-large;
+}
+.cards-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:50px;
+    min-width: 200px;
+    background-color:#F6850C;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 24px ;
+    color:#214082;
+}
+</style>
+</head>
+<body>
+<nav class="nav-bar-container">
+<div class="nav-bar-1">
+<a href="./index.html">HOME</a>
+<a href="./skills.html">SKILLS</a>
+<a href="./about.html">ABOUT</a>
+<a href="./project.html">PROJECT</a>
+</div>
+<div class="nav-bar-2">
+        <a href="#" id="openLogin">log in</a>
+</div>
+</nav>
+
+    <div id="loginModal" class="modal-overlay">
+      <div class="modal-card">
+        <span id="closeModal" class="close-btn">&times;</span>
+        <h2>Log In</h2>
+        <form class="login">
+          <input type="text" placeholder="Username or Handle" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="submit-button">Log In</button>
+        </form>
+      </div>
+    </div>
+
+
+<div class="main">
+    <div class="outerBox">
+        <div class="info">
+            <h1>SKILLS</h1>
+            <h3>What I Work With</h3>
+<p>My coding journey revolves around problem-solving and building clean digital experiences.<br></p>
+<div class="cards-holder">
+    <div class="cards">
+        <h4>Languages:</h4>
+        
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+    <div class="cards">
+        <h4>Tools:</h4>
+        
+        <ul>
+            <li>Linux Terminal</li>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>JetBrains Suite</li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
